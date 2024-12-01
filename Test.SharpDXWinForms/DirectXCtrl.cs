@@ -44,7 +44,7 @@ public partial class DirectXCtrl : UserControl
 		this._dxgiFactory = new Factory1();
 		if (this._dxgiFactory == null)
 			throw new Exception($"{nameof(DirectXCtrl)}.{nameof(OnHandleCreated)}: Unable to get DXGI.Factory1 object.");
-
+		
 		// Scelta dell'adapter da utilizzare
 		foreach (Adapter adapter in this._dxgiFactory.Adapters)
 		{
