@@ -138,7 +138,6 @@ public partial class DirectXCtrl : UserControl
 	protected override void OnResize(EventArgs e)
 	{
 		base.OnResize(e);
-
 		// Le altre operazioni vanno effettuate solo a runtime
 		if (this.DesignMode)
 			return;
